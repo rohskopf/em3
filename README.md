@@ -14,6 +14,8 @@ This creates an executable called `em3`.
 
 ### Using EM3
 
+The manual is located here: [https://github.com/rohskopf/em3/blob/master/Manual.pdf](https://github.com/rohskopf/em3/blob/master/Manual.pdf)
+
 There are two main input files: (1) `INPUT` and (2) `CONFIGS`. These files must be placed in the directory that the simulation occurs, and then execute the `em3` exectuable in this directory.
 
 Example `INPUT` and `CONFIG` files for each of the cases discussed in the manual given in the 
