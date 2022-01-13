@@ -1,14 +1,20 @@
-# em3
-Easy Modular Molecular Mechanics (EM3) Program
+# Easy Modular Molecular Mechanics (EM3) Program
 
-These instructions only pertain to a Linux environment with GNU Make, GCC, and OpenMPI installed.
+A plethora of powerful open-source atomistic simulation programs are available to the public, including LAMMPS, GROMACS, and many others. With the current availability of powerful atomistic simulation programs, the development of another might seem futile. EM3, however, possesses a goal that separates it from the rest of the currently available programs. Unlike existing programs possessing goals centered around broad performance across all materials/molecules/systems, the goal of EM3 is more educational and serves as a simple platform for studyign MD simulation *performance*. This educational goal centers around the simple (easy) objective-oriented (modular) C++ source code of EM3, which aside from being powerful and efficient, seeks to bridge the gap between less powerful but easily understood MATLAB and Python codes scattered about the internet and more powerful but complicated larger programs like LAMMPS and GROMACS (also written in C++ and C, respectively). 
 
-Compile EM3 in the /src directory by simply typing "make". This will create an executable 
-called "em3".
+### Installation
 
-Example INPUT and CONFIG files for each of the cases discussed in the manual given in the 
-/examples directory. To run these examples, simply execute the "em3" executable in the same
-directory as the INPUT and CONFIG files.
+In a Linux environment, build with:
 
-This can be done by simply typing "./em3" in those directories, with the em3 exectubale in 
-the directory.
+    cd src
+    make clean
+    make
+
+This creates an executable called `em3`.
+
+### Using EM3
+
+There are two main input files: (1) `INPUT` and (2) `CONFIGS`. These files must be placed in the directory that the simulation occurs, and then execute the `em3` exectuable in this directory.
+
+Example `INPUT` and `CONFIG` files for each of the cases discussed in the manual given in the 
+`/examples` directory. 
